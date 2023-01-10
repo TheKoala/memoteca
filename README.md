@@ -1,5 +1,8 @@
 # Memoteca
 
+Project developed in the Angular 14 course: apply the concepts and develop your first CRUD, from the Alura platform.
+Projeto desenvolvido no curso de Angular 14: aplique os conceitos e desenvolva seu primeiro CRUD da Alura
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
 ## Development server
