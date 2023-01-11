@@ -18,7 +18,4 @@ criarPensamento() {
   alert("Novo pensamento criado!")
 }
 
-cancelar() {
-  alert("CANCELAAA!")
-}
 }
