@@ -1,3 +1,5 @@
+import { PensamentoService } from './../pensamento.service';
+import { Pensamento } from './../pensamento';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,22 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./listar-pensamento.component.css'],
 })
 export class ListarPensamentoComponent {
-  listaPensamentos = [
-    {
-      conteudo: 'I love Angular',
-      autoria: 'Nay',
-      modelo: 'modelo3',
-    },
-    {
-      conteudo: 'O sapo não lava o pé',
-      autoria: 'Professora do Jardim',
-      modelo: 'modelo1',
-    },
-    {
-      conteudo:
-        'Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Diuretics paradis num copo é motivis de denguis. Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Sapien in monti palavris qui num significa nadis i pareci latim.',
-      autoria: 'Mussum',
-      modelo: 'modelo1',
-    },
-  ];
+  listaPensamentos: Pensamento[] = [];
+
+  constructor(private service: PensamentoService) {
+    this.service.listar().subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos;
+    });
+  }
 }
