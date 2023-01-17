@@ -38,6 +38,7 @@ export class EditarPensamentoComponent {
           ]),
         ],
         modelo: [pensamento.modelo],
+        favorito: [pensamento.favorito]
       });
     });
   }

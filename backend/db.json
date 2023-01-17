@@ -4,35 +4,41 @@
       "id": 1,
       "conteudo": "Já que você veio eu fico mais feliz, me sinto bem mais a vontade..",
       "autoria": "crombie",
+      "favorito": false,
       "modelo": "modelo1"
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular",
       "autoria": "dev alura",
+      "favorito": true,
       "modelo": "modelo2"
     },
     {
       "id": 3,
       "conteudo": "Angular é o melhor'",
       "autoria": "Dev Alura",
+      "favorito": false,
       "modelo": "modelo3"
     },
     {
       "conteudo": "Eu sou eu, você é você!",
       "autoria": "Ricardinho",
+      "favorito": false,
       "modelo": "modelo1",
       "id": 5
     },
     {
       "conteudo": "O sapo não lava o pé",
       "autoria": "professora",
+      "favorito": false,
       "modelo": "modelo3",
       "id": 6
     },
     {
       "conteudo": "Resolver o bug não consegue? Esfriar a cabeça você deve",
       "autoria": "mestre yoda",
+      "favorito": true,
       "modelo": "modelo2",
       "id": 7
     },
@@ -40,6 +46,7 @@
       "id": 8,
       "conteudo": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssangularsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
       "autoria": "sss",
+      "favorito": true,
       "modelo": "modelo1"
     }
   ]

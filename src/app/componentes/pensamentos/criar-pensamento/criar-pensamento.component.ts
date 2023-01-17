@@ -10,7 +10,6 @@ import { minusculoValidator } from './minusculoValidator';
   styleUrls: ['./criar-pensamento.component.css'],
 })
 export class CriarPensamentoComponent {
-
   formulario!: FormGroup;
 
   constructor(
@@ -35,6 +34,7 @@ export class CriarPensamentoComponent {
         ]),
       ],
       modelo: ['modelo1'],
+      favorito: false,
     });
   }
 
