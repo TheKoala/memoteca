@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { minusculoValidator } from './minusculoValidator';
-//import { Pensamento } from './../pensamento';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -11,11 +10,6 @@ import { minusculoValidator } from './minusculoValidator';
   styleUrls: ['./criar-pensamento.component.css'],
 })
 export class CriarPensamentoComponent {
-  /* pensamento: Pensamento = {
-    conteudo: '',
-    autoria: '',
-    modelo: '',
-  }; */
 
   formulario!: FormGroup;
 
