@@ -1,8 +1,9 @@
 import { PensamentoService } from './../pensamento.service';
-import { Pensamento } from './../pensamento';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { minusculoValidator } from './minusculoValidator';
+//import { Pensamento } from './../pensamento';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -23,13 +24,24 @@ export class CriarPensamentoComponent {
     private router: Router,
     private formBuilder: FormBuilder
   ) {
-
     this.formulario = this.formBuilder.group({
-      conteudo: ['', Validators.compose([Validators.required, Validators.pattern(/(.|\s)*\S(.|\s)*/)])],
-      autoria: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
+      conteudo: [
+        '',
+        Validators.compose([
+          Validators.required,
+          Validators.pattern(/(.|\s)*\S(.|\s)*/),
+        ]),
+      ],
+      autoria: [
+        '',
+        Validators.compose([
+          Validators.required,
+          Validators.minLength(3),
+          minusculoValidator,
+        ]),
+      ],
       modelo: ['modelo1'],
     });
-
   }
 
   criarPensamento() {
@@ -42,5 +54,13 @@ export class CriarPensamentoComponent {
 
   cancelar() {
     this.router.navigate(['/listarPensamento']);
+  }
+
+  habilitarBotao(): string {
+    if (this.formulario.valid) {
+      return 'botao';
+    } else {
+      return 'botao__desabilitado';
+    }
   }
 }

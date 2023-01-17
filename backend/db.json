@@ -3,13 +3,13 @@
     {
       "id": 1,
       "conteudo": "Já que você veio eu fico mais feliz, me sinto bem mais a vontade..",
-      "autoria": "Crombie",
-      "modelo": "modelo3"
+      "autoria": "crombie",
+      "modelo": "modelo1"
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
+      "autoria": "dev alura",
       "modelo": "modelo2"
     },
     {
