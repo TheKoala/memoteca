@@ -22,11 +22,11 @@
       "modelo": "modelo3"
     },
     {
+      "id": 5,
       "conteudo": "Eu sou eu, você é você!",
-      "autoria": "Ricardinho",
-      "favorito": false,
+      "autoria": "ricardinho",
       "modelo": "modelo1",
-      "id": 5
+      "favorito": true
     },
     {
       "conteudo": "O sapo não lava o pé",
@@ -48,6 +48,13 @@
       "autoria": "sss",
       "favorito": true,
       "modelo": "modelo1"
+    },
+    {
+      "conteudo": "Além de não ser fácil, é dificil.",
+      "autoria": "adna",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 9
     }
   ]
 }
